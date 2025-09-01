@@ -1,0 +1,108 @@
+Name: MelonBall
+
+#CHATGPT GENERATED#
+Slogan: Slow down. Breathe in. Play easy. Drift far.
+
+Description: 
+
+Welcome to MelonBall — where the tropics meet tranquility.
+
+At MelonBall, we’re passionate about creating video game experiences that go beyond
+entertainment. We specialize in tropical-inspired, immersive worlds that offer 
+players a chance to relax, explore, and escape. Our mission is simple: craft games 
+that feel like a vacation, whether you have five minutes or five hours to play.
+
+Every MelonBall game is a love letter to warm breezes, ocean waves, and the calming 
+rhythm of island life. From lush jungles and quiet coves to sun-drenched villages 
+and floating archipelagos, our worlds are built to soothe your senses and spark
+your imagination. Gameplay is intuitive, peaceful, and player-driven — focusing on
+exploration, creativity, and emotional connection rather than high-stress 
+mechanics.
+
+We believe games can be a form of self-care. That’s why our titles are designed to 
+be approachable, visually uplifting, and easy to fall into — whether you're a 
+seasoned gamer or just looking for a peaceful digital escape after a long day.
+
+MelonBall is more than a game studio. We're a team of artists, developers, and 
+storytellers with a shared vision: to make games that bring joy, calm, and a sense
+of wonder. Our commitment to high-quality design and atmosphere ensures that every 
+moment in a MelonBall game feels like a step away from the noise of everyday life.
+
+Jobs 1:
+
+Reference: MB3D1
+Title: Environmental Designer – Immersive Tropical Worlds
+Location: Remote or On-site (Hybrid Options Available)
+Salary: $70,000 – $90,000 USD / year (DOE)
+Short Description:
+MelonBall is seeking a talented and imaginative Environmental Designer to help 
+shape the lush, immersive worlds at the heart of our tropical-inspired games. 
+You’ll craft serene and visually striking environments that invite exploration 
+and relaxation, blending stylized artistry with technical design.
+________________________________________
+Reporting Line:
+Reports to the Art Director and collaborates closely with the Level Design and 
+Narrative Teams.
+________________________________________
+Key Responsibilities:
+•	Design and build immersive outdoor and indoor environments using Unreal Engine
+•	Create level layouts that balance beauty, gameplay flow, and storytelling
+•	Translate 2D concepts into compelling 3D scenes with strong composition and 
+    atmosphere
+•	Collaborate with lighting, animation, and VFX teams to achieve cohesive world 
+    design
+•	Optimize environments for performance and visual fidelity across platforms
+•	Contribute to environmental storytelling and the overall player journey
+•	Participate in playtests and iterate on feedback to refine world design
+________________________________________
+Essential Requirements:
+•	3+ years of professional experience in 3D environmental design for games
+•	Strong portfolio showcasing stylized or naturalistic 3D environments
+•	Proficiency in Unreal Engine (particularly World Building tools and Level 
+    Streaming)
+•	Excellent understanding of composition, scale, lighting, and color theory
+•	Ability to work independently and collaboratively in a fast-paced, creative 
+    environment
+________________________________________
+Preferable Requirements:
+•	Experience working on relaxing, exploration-driven, or open-world games
+•	Background in environmental storytelling or visual narrative design
+•	Familiarity with shader development and foliage systems in Unreal
+•	Understanding of performance optimization techniques for mobile/console
+
+
+Job Listing 2: Unreal Engine & C++ Programmer
+Reference: MBDEV7
+Title: Unreal Engine Developer (C++) – Gameplay & Systems
+Location: Remote or On-site (Hybrid Options Available)
+Salary: $85,000 – $110,000 USD / year (DOE)
+________________________________________
+ Short Description:
+MelonBall is looking for a skilled Unreal Engine & C++ Programmer to help bring our peaceful, tropical game worlds to life. You’ll build responsive, elegant systems and gameplay mechanics that feel smooth, intuitive, and deeply immersive.
+________________________________________
+Reporting Line:
+Reports to the Lead Programmer and collaborates with Design and Art teams.
+________________________________________
+Key Responsibilities:
+•	Develop and maintain gameplay systems in Unreal Engine using C++
+•	Implement mechanics related to exploration, interaction, and world simulation
+•	Optimize game code for performance across PC, console, and mobile platforms
+•	Work closely with designers to prototype and refine new features
+•	Debug and resolve issues across the codebase
+•	Assist in integrating art and animation assets into the engine
+•	Contribute to internal documentation and development tools
+________________________________________
+ Essential Requirements:
+•	3+ years of experience with Unreal Engine and C++ in game development
+•	Strong understanding of object-oriented programming and software architecture
+•	Experience developing and optimizing gameplay systems
+•	Familiarity with Blueprints and how to bridge them with C++ code
+•	Ability to write clean, modular, and well-documented code
+________________________________________
+Preferable Requirements:
+•	Experience with open-world or sandbox game systems
+•	Understanding of multiplayer/online features in Unreal
+•	Familiarity with AI behavior trees and navigation systems
+•	Passion for chill, exploration-driven games or narrative design
+
+
