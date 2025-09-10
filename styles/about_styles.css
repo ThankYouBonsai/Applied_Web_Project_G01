@@ -1,8 +1,29 @@
 
 
-
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
 .grname {
     float: left;
     text-align: justify;
     width: 80%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+section {
+    float: center;
+    text-align: center;
+    width: 80%;
+}
+.group-photo {
+    display: block;
+    float: right;
+    margin: auto;
 }
