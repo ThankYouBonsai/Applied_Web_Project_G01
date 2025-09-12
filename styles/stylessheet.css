@@ -6,13 +6,28 @@ last modified: 9/12/2025
 description: style sheets for html
 */
 
+
+/* CSS Variable */
+:root {
+  --crimson_red: rgb(201, 38, 74);
+  --bar_width: 35px;
+  --bar_height: 6px;
+  --hamburger_gap: 3px;
+  --foreground: black;
+  --background: white;
+  --hamburger_margin: 30px;
+  --animation_timing: 200ms ease-in-out;
+  --hamburger_height: calc(var(--bar_height) * 3 
+  + var(--hamburger_gap) * 2);
+}
+
 /* Global CSS */
 
 * { /* Font family for the site [I asked AI to pick some of the most common used font and enter them here] */
-    font-family: "Segoe UI", "Roboto",
-    "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: "Segoe UI", "Roboto",
+  "Helvetica Neue", "Arial", "sans-serif",
+  "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
 }
 
 /* ------------------- Start of the header ------------------- */
@@ -25,6 +40,7 @@ header { /* Makes the header stick to the top of the screen */
 
 .header_container { /* Flex container containing all 3 parts of the header */
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +75,7 @@ header { /* Makes the header stick to the top of the screen */
 }
 
 /* Makes the logo and the text below it */
-.logo_container {
+.logo_container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,12 +89,16 @@ header { /* Makes the header stick to the top of the screen */
 }
 
 #logo {
-  min-width: 50px;
+  min-width: 4em;
   max-width: 15%;
 }
 
 .right_spacer { /* spacer for the right side of the header to make logo centered */
   flex-grow: 1; 
+}
+
+.hamburger_menu {
+  display: none;
 }
 
 /* ------------------- End of the header ------------------- */
@@ -97,7 +117,6 @@ aside {
 }
 
 /* ------------------- End of aside ------------------- */
-
 
 /* ------------------- footer ------------------- */
 
@@ -126,6 +145,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
 }
 
 header {
@@ -142,3 +162,198 @@ footer {
 }
 
 /* ------------------- End of page consistency setup ------------------- */
+
+/* ------------------- mobile/tablet view setup ------------------- */
+
+/* for jobs page */
+
+@media (max-width: 768px) {
+  .jobs_container {
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+  }
+  
+  .jobs_selection {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .jobs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.8em;
+    height: 20em;
+  }
+
+  aside {
+    width: 0;
+    display: none;
+  }
+
+/* for jobs page */
+
+  .nav_container {
+    display: none;
+  }
+
+  .right_spacer {
+    display: none;
+  }
+  .hamburger_menu {
+  display: flex;
+  }
+}
+
+/* ------------------- End of mobile/tablet view setup ------------------- */
+
+/* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
+
+.hamburger_menu {
+  --x_width: calc(var(--hamburger_height) * 1.41421356237);
+  flex-direction: column;
+  gap: var(--hamburger_gap);
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger_margin);
+  left: var(--hamburger_margin);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger_menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger_menu::before, .hamburger_menu::after, .hamburger_menu input {
+  content: "";
+  width: var(--bar_width);
+  height: var(--bar_height);
+  background-color: var(--foreground);
+  border-radius: 900px;
+  transform-origin: left center;
+  transition: opacity var(--animation_timing), width var(--animation_timing),
+  rotate var(--animation_timing), translate var(--animation_timing),
+  background-color var(--animation_timing);
+}
+
+.hamburger_menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x_width);
+  translate: 0 calc(var(--bar_height) / -2);
+}
+
+.hamburger_menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x_width);
+  translate: 0 calc(var(--bar_height) / 2);
+}
+
+.hamburger_menu input:checked {
+  opacity: 0;
+  width: 0;
+} 
+
+.sidebar {
+  translate: -150%;
+  transition: translate var(--animation_timing);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: calc(var(--hamburger_margin) + var(--hamburger_height) + 0.5rem);
+  padding: calc(var(--bar_width) / 2);
+  background-color: var(--crimson_red);
+  color: var(--background);
+  max-width: 10rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.sidebar li a.activePage { /* Underline the current page, make sure to add .activePage to the page current anchor link for this to work. */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.hamburger_menu:has(input:checked) + .sidebar {
+  translate: 0;
+} 
+
+/* ------------------- End of hamburger menu ------------------- */
+
+/* ------------------ Jobs Page ------------------ */
+
+.jobs_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jobs_selection {
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8em;
+  padding: 1em;
+  height: 13em;
+  border: 0.2em;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: var(--crimson_red)
+}
+
+.jobs .job_desc {
+  display: none;
+}
+
+.jobs .job_title {
+  display: block;
+}
+
+.jobs:hover {
+  cursor: pointer;
+  border: solid black;
+
+  .job_title {
+    display: none;
+  }
+
+  .job_desc {
+    display: block;
+  }
+}
+
+#apply_link {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------ End of Jobs Page ------------------ */
