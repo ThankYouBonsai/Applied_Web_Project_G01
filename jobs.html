@@ -29,62 +29,85 @@
         <meta name="author" content="Jonah, James, Kia and Duc">
 
         <!-- Link to external CSS File -->
-        <link rel="stylesheet" href="styles/jobs_styles.css">
+        <link rel="stylesheet" href="styles/stylessheet.css">
 
         <!-- Title of Web Page-->
-        <title></title>
+        <title>MELONBALL | Jobs Availability</title>
     </head>
     <body>
         <header>
-          <div class="container">
-            <div class="navContainer">
+          <!-- Header -->
+          <!-- Hamburger Menu -->
+          <label class="hamburger_menu">
+            <input type="checkbox">
+          </label>
+          <div class="sidebar">
+            <nav>
+                <ul>
+                  <li><a href="jobs.html" class="activePage">Jobs</a></li>
+                  <li><a href="apply.html">Apply</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+          </div>
+          <!-- Normal Header -->
+          <div class="header_container">
+            <div class="nav_container">
               <nav>
                 <ul>
-                  <li><a href="about.html">About Us</a></li>
                   <li><a href="jobs.html" class="activePage">Jobs</a></li>
-                  <li><a href="apply.html">Apply Now</a></li>
+                  <li><a href="apply.html">Apply</a></li>
+                  <li><a href="about.html">About</a></li>
                 </ul>
               </nav>
             </div>            
-            <div class="logoContainer">
-              <img id="logo" src="images/Logo Black.svg" alt="This is Melonballs Logo">
+            <div class="logo_container">
+              <a href="index.html"><img id="logo" src="images/Logo_Black.svg" alt="This is Melonballs Logo"></a>
               <p>MELON<strong>BALL</strong></p>
             </div>
-            <div class="rightSpacer"></div>
+            <div class="right_spacer"></div>
           </div>
+          <!-- End of Header -->
         </header>
         <main>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
+          <!-- main site area -->
+          <div class="jobs_container">
+            <div class="jobs_selection">
+              <a id="apply_link" href="apply.html"><div class="jobs">
+                <p class="job_title"><strong>Job Title 1</strong></p>
+                <p class="job_desc">
+                  Job Description 1 line 1
+                  <br>Job Description 1 line 2
+                  <br>Job Description 1 line 3
+                </p>
+              </div></a>
+              <a id="apply_link" href="apply.html"><div class="jobs">
+                <p class="job_title"><strong>Job Title 2</strong></p>
+                <p class="job_desc">
+                  Job Description 2 line 1
+                  <br>Job Description 2 line 2
+                  <br>Job Description 2 line 3
+                </p>
+              </div></a>
+              <a id="apply_link" href="apply.html"><div class="jobs">
+                <p class="job_title"><strong>Job Title 3</strong></p>
+                <p class="job_desc">
+                  Job Description 3 line 1
+                  <br>Job Description 3 line 2
+                  <br>Job Description 3 line 3
+                </p>
+              </div></a>
+            </div>
+            <aside>
+            <p class="my_element">This space is reserved for aside</p>
+            </aside>
+          </div>
+          <!-- End of main site area -->
         </main>
-        <footer></footer>
+        <footer class="footer_container">
+          <a href="https://discord.com"><img class="footer_logo" src="images/discord.svg" alt="Our Discord server"></a>
+          <a href="https://jonahclydeswin.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline"><img class="footer_logo" src="images/jira.svg" alt="Our Jira board"></a>
+          <a href="mailto:info@melonball.com"> <img class="footer_logo" src="images/email.svg" alt="Email us"></a>
+        </footer>
     </body>
 </html>
