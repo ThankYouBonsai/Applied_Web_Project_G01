@@ -68,7 +68,7 @@ header { /* Makes the header stick to the top of the screen */
 
 .background-red{
     display: inline-block;
-    background-color: darkred;
+    background-color:  rgb(201, 38, 74);
     color: lightgray;
     text-align: center;
     position: relative;
@@ -124,4 +124,35 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Set all Input to the right*/
+
+form input { position: relative;}
+#referenceNumber { left: 20%; }
+#firstName { left: 36.5%;}
+#lastName { left: 36.5%;}
+form fieldset { margin-top: 10px;}
+#address { left: 40%;}
+#suburb { left: 41.125%;}
+form select, #statelabel {margin-top: 25px; margin-bottom: 10px;}
+form select { position: relative; left: 46.5%;}
+#postcode {left: 38.125%;}
+#email { left: 43.625%}
+#number { left: 30.75%}
+.aligncheckboxright { 
+  position: relative;
+  left: 25%;
+  margin-top: 15px;
+}
+.aligncheckboxright2 {
+  position: relative;
+  left: 42%;
+  margin-bottom: 15px;
+}
+
+
+textarea { resize: none;}
+
+
+/*form label {margin-top: 10px;}*/
 

@@ -26,6 +26,7 @@ A Requirement given by the industry guest lecturer.
 
         <!-- Link to external CSS File -->
         <link rel="stylesheet" href="styles/stylessheet.css">
+        <link rel="stylesheet" href="styles/apply_styles.css">
 
         <!-- Title of Web Page-->
         <title></title>
@@ -43,83 +44,117 @@ A Requirement given by the industry guest lecturer.
               </nav>
             </div>            
             <div class="logoContainer">
-              <img id="logo" src="images/Logo Black.svg" alt="This is Melonballs Logo">
+              <img id="logo" src="images/Logo_Black.svg" alt="Melonball Logo">
               <p>MELON<strong>BALL</strong></p>
             </div>
             <div class="rightSpacer"></div>
           </div>
         </header>
         <main>
+
+          <!-- Main form -->
             <div class="background-red">
                 <h4 id="applicationTitle">Application form</h4>
-                <form>
+                <!-- POST form to "formtest.php"-->
+                <form action="formtest.php" method="post">
+
+                  <!-- Job Reference Number (Exactly 5 Alphanumeric Characters) -->
                   <label for="referenceNumber">Job Reference Number: </label>
-                  <input type="text" id="referenceNumber" required>
+                  <input type="text" id="referenceNumber" pattern="[a-zA-Z]{5}" required>
 
                   <div class="flex-break"></div>
 
+                  <!-- First Name (Max 20 Alphanumeric Characters) -->
                   <label for="firstName">First Name: </label>
-                  <input type="text" id="firstName" required>
+                  <input type="text" id="firstName" pattern="[a-zA-Z]{1,20}" required>
 
                   <div class="flex-break"></div>
 
+                  <!-- Last Name (Max 20 Alphanumeric Characters) -->
                   <label for="lastName">Last Name: </label>
-                  <input type="text" id="lastName" required>
+                  <input type="text" id="lastName" pattern="[a-zA-Z]{1,20}" required>
 
                   <div class="flex-break"></div>
 
-                  <label for="gender">Gender: </label>
-                  <label><input type="radio" value="Male" id="male" name="gender">Male</label>
-                  <label><input type="radio" value="Female" id="female" name="gender">Female</label>
+                  <!-- Gender (Radio Buttons + Fieldset and Legend) -->
+                  <fieldset>
+                    <legend for="gender">Gender</legend>
+                    <label for="male"><input type="radio" value="Male" id="male" name="gender">Male</label>
+                    <label for="female"><input type="radio" value="Female" id="female" name="gender">Female</label>
+                  </fieldset>
 
                   <div class="flex-break"></div>
 
+                  <!-- Street Address (Max 40 Characters)-->
                   <label for="address">Address: </label>
-                  <input type="text" id="address" required>
+                  <input type="text" id="address" pattern=".{1,40}" required>
+                  
+                  <div class="flex-break"></div>
+
+                  <!-- Suburb/Town (Max 40 Characters)-->
+                  <label for="suburb">Suburb: </label>
+                  <input type="text" id="suburb" pattern=".{1,40}" required>
 
                   <div class="flex-break"></div>
 
-                  <label for="suburb">Subrub: </label>
-                  <input type="text" id="suburb" pattern="[a-zA-Z{1, 40}" required>
-
-                  <div class="flex-break"></div>
-
-                  <label for="state">State: </label>
+                  <!-- State (DROPDOWN: VIC,NSW,QLD,NT,WA,SA,TAS,ACT) -->
+                  <label for="state" id="statelabel">State: </label>
                   <select id="state" name="state">
                     <option value="empty">Please Select a State</option>
-                    <option value="TAS">Tasmania</option>
-                    <option value="VIC">Victoria</option>
-                    <option value="SA">South Australia</option>
-                    <option value="WA">Western Australia</option>
-                    <option value="NSW">New South Wales</option>
-                    <option value="QLD">Queensland</option>
-                    <option value="NT">Northen Territory</option>
-                    <option value="ACT">Australian Capital Territory</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
                   </select>
 
                   <div class="flex-break"></div>
 
+                  <!-- Postcode (Exactly 4 digits)-->
                   <label for="postcode">Postcode: </label>
-                  <input type="number" maxlength="4" minlength="4" id="postcode" pattern="[0-9]{4}">
+                  <input type="number" maxlength="4" minlength="4" id="postcode" pattern="[0-9]{4}" required>
 
                   <div class="flex-break"></div>
 
+                  <!-- Email (valid format) -->
                   <label for="email">Email: </label>
-                  <input type="email" id="email">
+                  <input type="email" id="email" required>
 
                   <div class="flex-break"></div>
 
+                  <!-- Phone Number (8-12 Digits) -->
                   <label for="number">Phone Number: </label>
-                  <input type="number" id="number">
+                  <input type="number" id="number" pattern="[0-9]{8,12}" required>
 
                   <div class="flex-break"></div>
 
-                  <p>Skill List:</p>
+                  <!-- Skill List (Checkbox inputs) + inline CSS Example-->
+                  <label style="margin-top: 15px;">Skill List:</label>
+                  <div class="aligncheckboxright">
+                    <label for="teamwork"><input type="checkbox" value="teamwork" id="skills" name="teamwork">Teamworking Skills</label>
+                    <label for="experience"><input type="checkbox" value="experience" id="skills" name="experience">Experience</label>
+                  </div>
 
                   <div class="flex-break"></div>
 
-                  <p>Other Skills</p>
-                  <textarea></textarea>
+                  <div class="aligncheckboxright2">
+                    <label for="ux"><input type="checkbox" value="ux" id="skills" name="ux">User Expererience</label>
+                    <label for="other"><input type="checkbox" value="other" id="skills" name="other">Other Skills</label>
+                  </div>
+
+                  <div class="flex-break"></div>
+
+                  <!-- HTML in CSS Example-->
+                  <style>
+                    #otherskillslabel {margin-top: 15px;}
+                    #otherskills {margin-top: 15px;}
+                  </style>
+
+                  <label for="otherskills" id="otherskillslabel">Other Skills: </label>
+                  <textarea id="otherskills" cols="50" rows="4"></textarea>
                   
                   <div class="flex-break"></div>
                   
