@@ -31,8 +31,110 @@ A Requirement given by the industry guest lecturer.
         <title></title>
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header>
+            <div class="container">
+            <div class="navContainer">
+              <nav>
+                <ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="jobs.html" class="activePage">Jobs</a></li>
+                  <li><a href="apply.html">Apply Now</a></li>
+                </ul>
+              </nav>
+            </div>            
+            <div class="logoContainer">
+              <img id="logo" src="images/Logo Black.svg" alt="This is Melonballs Logo">
+              <p>MELON<strong>BALL</strong></p>
+            </div>
+            <div class="rightSpacer"></div>
+          </div>
+        </header>
+        <main>
+            <div class="background-red">
+                <h4 id="applicationTitle">Application form</h4>
+                <form>
+                  <label for="referenceNumber">Job Reference Number: </label>
+                  <input type="text" id="referenceNumber" required>
+
+                  <div class="flex-break"></div>
+
+                  <label for="firstName">First Name: </label>
+                  <input type="text" id="firstName" required>
+
+                  <div class="flex-break"></div>
+
+                  <label for="lastName">Last Name: </label>
+                  <input type="text" id="lastName" required>
+
+                  <div class="flex-break"></div>
+
+                  <label for="gender">Gender: </label>
+                  <label><input type="radio" value="Male" id="male" name="gender">Male</label>
+                  <label><input type="radio" value="Female" id="female" name="gender">Female</label>
+
+                  <div class="flex-break"></div>
+
+                  <label for="address">Address: </label>
+                  <input type="text" id="address" required>
+
+                  <div class="flex-break"></div>
+
+                  <label for="suburb">Subrub: </label>
+                  <input type="text" id="suburb" pattern="[a-zA-Z{1, 40}" required>
+
+                  <div class="flex-break"></div>
+
+                  <label for="state">State: </label>
+                  <select id="state" name="state">
+                    <option value="empty">Please Select a State</option>
+                    <option value="TAS">Tasmania</option>
+                    <option value="VIC">Victoria</option>
+                    <option value="SA">South Australia</option>
+                    <option value="WA">Western Australia</option>
+                    <option value="NSW">New South Wales</option>
+                    <option value="QLD">Queensland</option>
+                    <option value="NT">Northen Territory</option>
+                    <option value="ACT">Australian Capital Territory</option>
+                  </select>
+
+                  <div class="flex-break"></div>
+
+                  <label for="postcode">Postcode: </label>
+                  <input type="number" maxlength="4" minlength="4" id="postcode" pattern="[0-9]{4}">
+
+                  <div class="flex-break"></div>
+
+                  <label for="email">Email: </label>
+                  <input type="email" id="email">
+
+                  <div class="flex-break"></div>
+
+                  <label for="number">Phone Number: </label>
+                  <input type="number" id="number">
+
+                  <div class="flex-break"></div>
+
+                  <p>Skill List:</p>
+
+                  <div class="flex-break"></div>
+
+                  <p>Other Skills</p>
+                  <textarea></textarea>
+                  
+                  <div class="flex-break"></div>
+                  
+                  <button id="submitButton">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <a href="https://discord.com"><img src="images/discord.svg" alt="Our Discord server" width="50"></a>
+            <a href="https://jonahclydeswin.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline"><img src="images/jira.svg" alt="Our Jira board" width="50"></a>
+            <a href="mailto:info@melonball.com"><img src="images/email.svg" alt="Email us" width="50"></a>
+            <p>
+                &copy; 2025 MelonBall |
+                <a href="mailto:info@melonball.com.au"> Email Us</a> 
+            </p>
+        </footer>
     </body>
 </html>
