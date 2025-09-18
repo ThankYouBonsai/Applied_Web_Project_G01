@@ -108,12 +108,13 @@ header { /* Makes the header stick to the top of the screen */
 
 aside {
   float: right;
+  min-height: 80em;
   width: 25%;
   margin: 0.8em;
   padding: 0.8em;
   justify-content: center;
   text-align: center;
-  background-color: rgb(201, 38, 74);
+  background-color: var(--crimson_red);
   border-radius: 10px;
 }
 
@@ -166,6 +167,11 @@ fieldset {
   border-radius: var(--border_radius);
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
 /* ------------------- End of page consistency setup ------------------- */
 
 /* ------------------- mobile/tablet view setup ------------------- */
@@ -188,7 +194,7 @@ fieldset {
     padding: 0;
     margin: 0;
     margin-bottom: 0.8em;
-    height: 20em;
+    min-height: 20em;
   }
 
   aside {
@@ -324,36 +330,37 @@ fieldset {
 
 .jobs {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   margin: 0.8em;
   padding: 1em;
-  height: 13em;
+  min-height: 13em;
   border: 0.2em;
   border-style: solid;
   border-radius: var(--border_radius);
   border-color: var(--crimson_red)
 }
 
-.jobs .job_desc {
-  display: none;
+.jobs .job_title .job_desc .job_meta{
+  display: block;
 }
 
-.jobs .job_title {
-  display: block;
+.job_info {
+  display: none;
 }
 
 .jobs:hover {
   cursor: pointer;
-  border: solid black;
+  border: 0.2em;
+  border: solid black; /* Correct border syntax */
+}
 
-  .job_title {
-    display: none;
-  }
+.jobs:hover .job_desc,
+.jobs:hover .job_meta {
+  display: none;
+}
 
-  .job_desc {
-    display: block;
-  }
+.jobs:hover .job_info {
+  display: block;
 }
 
 #apply_link {
