@@ -19,6 +19,7 @@ description: style sheets for html
   --animation_timing: 200ms ease-in-out;
   --hamburger_height: calc(var(--bar_height) * 3 
   + var(--hamburger_gap) * 2);
+  --border_radius: 10px;
 }
 
 /* Global CSS */
@@ -159,6 +160,10 @@ main {
 footer {
   flex-grow: 1;
   padding: 0.5em;
+}
+
+fieldset {
+  border-radius: var(--border_radius);
 }
 
 /* ------------------- End of page consistency setup ------------------- */
@@ -326,7 +331,7 @@ footer {
   height: 13em;
   border: 0.2em;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: var(--border_radius);
   border-color: var(--crimson_red)
 }
 
