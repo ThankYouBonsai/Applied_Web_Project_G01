@@ -63,6 +63,7 @@ footer {
 
 /* Set all Input to the right*/
 
+/* Hardcoded, which does not work on all devices
 form input { position: relative;}
 #referenceNumber { left: 20%; }
 #firstName { left: 36.5%;}
@@ -85,7 +86,7 @@ form select { position: relative; left: 46.5%;}
   left: 42%;
   margin-bottom: 15px;
 }
-
+*/
 
 textarea { resize: none;}
 
