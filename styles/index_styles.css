@@ -35,3 +35,7 @@ h2 {
     color: #4682B4; /* Steel blue color */
 }
 
+.header_container {
+  padding-top: 10px;
+}
+
