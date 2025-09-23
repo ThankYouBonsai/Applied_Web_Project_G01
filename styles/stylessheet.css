@@ -362,7 +362,7 @@ h1 {
   display: block;
 }
 
-#apply_link {
+.apply_link {
   text-decoration: none;
   color: black;
 }
