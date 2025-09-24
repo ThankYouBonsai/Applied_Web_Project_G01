@@ -37,3 +37,16 @@ Even a monkey falls down a tree
 Fun fact: 
 Did you know that bread was First
 made approximately 14,000 years ago
+
+Kio: 
+
+Member contributions: 
+Contributed with the website mock up design, header and footer css, jobs.html and css portion of it. Code for the website consistency and mobile view. 
+
+Quote: Khmer
+"ដំរី​ជើង​បួន គង់​មាន​ភ្លាត់ អ្នកប្រាជ្ញ​ចេះ​ស្ទាត់ គង់​មាន​ភ្លេច"
+English:
+“A four-legged elephant can still fall, a wise man who's knowledgeable can still forget.”
+
+Fun fact: 
+Water might not be wet.
