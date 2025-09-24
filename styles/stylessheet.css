@@ -229,12 +229,15 @@ h1 {
     width: 80%;
 }
 
+/*Create A class variable to affect the the <section> in about. 
+  Example: .about_section {...}
+*/
 
-section {
+/* section {
     float: center;
     text-align: center;
     width: 80%;
-}
+} */
 /* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
