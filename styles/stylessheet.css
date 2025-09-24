@@ -216,7 +216,26 @@ h1 {
 }
 
 /* ------------------- End of mobile/tablet view setup ------------------- */
+/* ------------------- About page ------------------- */
+.group-photo {
+    display: block;
+    float: right;
+    margin: auto;
+}
 
+.grname {
+    float: left;
+    text-align: justify;
+    width: 80%;
+}
+
+
+section {
+    float: center;
+    text-align: center;
+    width: 80%;
+}
+/* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
 .hamburger_menu {
@@ -427,10 +446,6 @@ h1 {
   border-radius: var(--border_radius);
 }
 
-.group-photo {
-    display: block;
-    float: right;
-    margin: auto;
-}
+
 
 /* ------------------ End of Index Page ------------------ */
