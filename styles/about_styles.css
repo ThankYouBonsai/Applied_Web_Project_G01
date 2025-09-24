@@ -1,4 +1,6 @@
-
+:root {
+  --crimson_red: rgb(201, 38, 74);
+}
 
 .grname {
     float: left;
