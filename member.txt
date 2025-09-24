@@ -22,3 +22,18 @@ English:
 Fun fact: 
 Did you know, pangolins curl into a ball 
 when threatened!
+
+Jonah Clyde:
+Contributed towards making the jira as well as organising the sprints. 
+for the webpage, i went into apply.html and apply_styles.css, which is
+a form for people applying for a job at melonball :)
+
+Quote: 日本語
+猿も木から落ちる
+
+Quote: English
+Even a monkey falls down a tree
+
+Fun fact: 
+Did you know that bread was First
+made approximately 14,000 years ago
