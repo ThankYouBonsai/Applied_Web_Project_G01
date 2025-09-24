@@ -389,14 +389,14 @@ section {
 /* ------------------ End of Jobs Page ------------------ */
 
 /* ------------------ Start of Index Page ------------------ */
-
+/*Main Contanier for both panels. Places in a row, nowrap ensures same line*/
 .index_container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0.8em;
 }
-
+/*Left Panel with background image, logo, company name and slogan*/
 .index_leftpanel {
   display: flex;
   flex-direction: row;
@@ -404,8 +404,7 @@ section {
   text-align: center;
   width: 65%;
   min-height: 40vh;
-  /*Image generated with ChatGPT: "High View, Tropical but 
-  rainy mountain*/
+  /*Image generated with ChatGPT: "High View, Tropical but rainy mountain"*/
   background-image: url('../images/Mountain.png');
   background-size: cover;
   background-position: center;
