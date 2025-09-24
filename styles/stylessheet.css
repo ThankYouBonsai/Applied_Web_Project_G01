@@ -232,9 +232,14 @@ h1 {
 }
 
 .about-section {
-    float: center;
-    text-align: center;
-    width: 80%;
+  float: center;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 20px; /* Space between sections */
+  padding: 10px; /* Padding inside each section */
+  border: 1px solid #ccc; /* Optional border for visual separation */
+  border-radius: var(--border_radius); /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
 }
 figure {
   text-align: center;
@@ -246,8 +251,17 @@ figcaption {
   float: right;
 
 }
-
-/* ------------------- End of About page ------------------- */
+/*Create A class variable to affect the the <section> in about. 
+  Example: .about_section {...}
+/*Create A class variable to affect the <section> in about. 
+  Example: .about_section {...}*/
+  .about-section {
+    float: center;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px; /* Space between sections */
+  }
+  /* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
 .hamburger_menu {
