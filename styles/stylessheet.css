@@ -241,26 +241,54 @@ h1 {
   border-radius: var(--border_radius); /* Rounded corners */
   background-color: #f9f9f9; /* Light background color */
 }
-figure {
-  text-align: center;
-}
-figcaption {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 5px;
-  float: right;
+.figure{ margin:0; }
 
-}
-/*Create A class variable to affect the the <section> in about. 
-  Example: .about_section {...}
-/*Create A class variable to affect the <section> in about. 
-  Example: .about_section {...}*/
+    .figure figcaption{ 
+      color:var(--muted); 
+      font-size:14px; 
+      margin-top:8px; 
+      text-align:center; }
+
+
   .about-section {
     float: center;
     text-align: center;
     width: 80%;
     margin-bottom: 20px; /* Space between sections */
   }
+  .about-section dl {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  text-align: left;
+  }
+  .about-section dt {
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: left;
+  }
+  .about-section dd {
+  margin-left: 0;
+  margin-bottom: 6px;
+  text-align: left;
+  }
+img {
+  object-fit: cover;
+}
+.about-section ul {
+  text-align: left;
+}
+.about-section li {
+  text-align: left;
+  margin-bottom: 6px;
+}
+.about-section thead {
+  font-style: bold;
+}
+.about-section table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
   /* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
