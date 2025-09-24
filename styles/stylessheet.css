@@ -37,6 +37,8 @@ header { /* Makes the header stick to the top of the screen */
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: var(--crimson_red);
+  border-radius: var(--border_radius);
 }
 
 .header_container { /* Flex container containing all 3 parts of the header */
@@ -229,12 +231,22 @@ h1 {
     width: 80%;
 }
 
-
-section {
+.about-section {
     float: center;
     text-align: center;
     width: 80%;
 }
+figure {
+  text-align: center;
+}
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+  float: right;
+
+}
+
 /* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
@@ -444,7 +456,5 @@ section {
   background-color: var(--crimson_red);
   border-radius: var(--border_radius);
 }
-
-
 
 /* ------------------ End of Index Page ------------------ */

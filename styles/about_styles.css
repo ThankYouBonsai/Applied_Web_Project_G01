@@ -108,14 +108,10 @@ footer {
     border-top: 1px solid #eee;
 }
 
-section {
-    float: center;
-    text-align: center;
-    width: 80%;
-}
-
 .group-photo {
     display: block;
     float: right;
     margin: auto;
+    background-color: var(--background);
+    border-radius: var(--border_radius);
 }
