@@ -1,6 +1,17 @@
 :root {
   --crimson_red: rgb(201, 38, 74);
+  --bar_width: 35px;
+  --bar_height: 6px;
+  --hamburger_gap: 3px;
+  --foreground: black;
+  --background: white;
+  --hamburger_margin: 30px;
+  --animation_timing: 200ms ease-in-out;
+  --hamburger_height: calc(var(--bar_height) * 3 
+  + var(--hamburger_gap) * 2);
+  --border_radius: 10px;
 }
+
 
 .grname {
     float: left;
