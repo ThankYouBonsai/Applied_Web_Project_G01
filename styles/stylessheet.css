@@ -132,7 +132,6 @@ aside {
 .footer_logo {
   margin: 0.3em;
   width: 2em;
-
 }
 
 /* ------------------- End of footer ------------------- */
@@ -217,7 +216,29 @@ h1 {
 }
 
 /* ------------------- End of mobile/tablet view setup ------------------- */
+/* ------------------- About page ------------------- */
+.group-photo {
+    display: block;
+    float: right;
+    margin: auto;
+}
 
+.grname {
+    float: left;
+    text-align: justify;
+    width: 80%;
+}
+
+/*Create A class variable to affect the the <section> in about. 
+  Example: .about_section {...}
+*/
+
+/* section {
+    float: center;
+    text-align: center;
+    width: 80%;
+} */
+/* ------------------- End of About page ------------------- */
 /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
 .hamburger_menu {
@@ -363,7 +384,7 @@ h1 {
   display: block;
 }
 
-#apply_link {
+.apply_link {
   text-decoration: none;
   color: black;
 }
@@ -371,63 +392,62 @@ h1 {
 /* ------------------ End of Jobs Page ------------------ */
 
 /* ------------------ Start of Index Page ------------------ */
-
+/*Main Contanier for both panels. Places in a row, nowrap ensures same line*/
 .index_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   margin: 0.8em;
 }
-
+/*Left Panel with background image, logo, company name and slogan*/
 .index_leftpanel {
-  position: relative;
-  float: left;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 60%;
-  min-height: 80em;
-  /*Image generated with ChatGPT*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 65%;
+  min-height: 40vh;
+  /*Image generated with ChatGPT: "High View, Tropical but rainy mountain"*/
   background-image: url('../images/Mountain.png');
   background-size: cover;
   background-position: center;
   padding: 0.8em;
   margin-right: 0.8em;
-  border-radius: 10px
+  border-radius: var(--border_radius);
 }
 
 .index_text-overlay img {
-  position: absolute;
-  min-height: 10em;
-  right: 100%;
-  top: 15%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-.index_text-overlay {
-  position: absolute;
-  top: 40px;
-  right: 15%;
+.index_text-overlay h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size: minimum, preferred 5% of viewport, Max */
+  color: #436B64; /*This Colour was chosen to creat a more accessible contrast*/
+  text-shadow: 3px 2px 4px rgba(115, 164, 152, 0.7);
+  margin: 0.5em 0;
 }
 
 .index_text-overlay h2 {
-  font-size: 3em;
-  color: white;
-  text-shadow: 3px 2px 4px rgba(115, 164, 152, 0.7);
-}
-
-.index_text-overlay p {
-  font-size: 1.5em;
-  color: rgb(179, 196, 177);
-  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.626);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--crimson_red);
+  text-shadow: 1px 1px 2px #fff, 0 0 1px #000; /* Add subtle black shadow for outline */
 }
 
 .index_rightpanel {
-  float: right;
-  min-height: 80em;
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
   width: 35%;
   padding: 0.8em;
   justify-content: center;
   text-align: center;
   background-color: var(--crimson_red);
-  border-radius: 10px;
+  border-radius: var(--border_radius);
 }
+
+
 
 /* ------------------ End of Index Page ------------------ */

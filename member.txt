@@ -1,9 +1,24 @@
 Everyon do these for the About -
 
-Memeber contributions: 
+Member contributions: 
 
-Quote: 
-
-definition list; first/favourite language + translation:
+Quote: First language and English or language of choice and english
 
 Fun fact:
+
+James Ralph: 
+
+Member contributions: 
+Contributed to scheduling meetings and correspondance with lecturer.
+The delagation of duties was also handled by Jonah and me. For our webpage my 
+responsibilities were for the company details(Who is the company, job details etc),
+the index.html and relevant CSS. 
+
+Quote: Italian
+"Finché c'è vita c'è speranza"
+English:
+"While there's life, there's hope"
+
+Fun fact: 
+Did you know, pangolins curl into a ball 
+when threatened!
