@@ -315,7 +315,7 @@ img {
 
   /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
-label[for="hamburger"] p {
+label[for="hamburger"] span {
   display: none;
 }
 
