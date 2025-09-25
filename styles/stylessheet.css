@@ -287,13 +287,18 @@ img {
   margin-bottom: 6px;
 }
 .about-section thead {
-  font-style: bold;
+  font-style: italic;
 }
 .about-section table {
   border: 1px solid black;
   border-collapse: collapse;
   width: 100%;
 } 
+.about-section th, .about-section td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
   /* ------------------- End of About page ------------------- */
 
   /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
