@@ -238,8 +238,9 @@ h1 {
 }
 
 .about-section {
-  float: center;
+  
   text-align: center;
+  margin: auto;
   width: 80%;
   margin-bottom: 20px; /* Space between sections */
   padding: 10px; /* Padding inside each section */
