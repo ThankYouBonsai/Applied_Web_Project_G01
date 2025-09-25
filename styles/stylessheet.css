@@ -225,9 +225,10 @@ h1 {
 /* ------------------- End of mobile/tablet view setup ------------------- */
 /* ------------------- About page ------------------- */
 .group-photo {
-    display: block;
-    float: right;
-    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .grname {
@@ -314,7 +315,11 @@ img {
 
   /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
-.hamburger_menu {
+label[for="hamburger"] p {
+  display: none;
+}
+
+.hamburger_menu[for="hamburger"] {
   --x_width: calc(var(--hamburger_height) * 1.41421356237);
   flex-direction: column;
   gap: var(--hamburger_gap);
@@ -389,7 +394,7 @@ img {
 
 .sidebar a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .sidebar li {
@@ -499,7 +504,7 @@ img {
 }
 
 .index_text-overlay h1 {
-  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size: minimum, preferred 5% of viewport, Max */
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size: minimum, preferred 5% of viewport, Max *//*Learnt through Copilot*/
   color: #436B64; /*This Colour was chosen to creat a more accessible contrast*/
   text-shadow: 3px 2px 4px rgba(115, 164, 152, 0.7);
   margin: 0.5em 0;
