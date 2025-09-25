@@ -125,6 +125,12 @@ aside {
 
 /* ------------------- footer ------------------- */
 
+footer {
+  /* display: flex; */
+  background-color: var(--background);
+  max-height: fit-content;
+}
+
 .footer_container {
   display: flex;
   flex-direction: row;
