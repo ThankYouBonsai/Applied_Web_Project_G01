@@ -303,7 +303,7 @@ img {
 
   /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
-.hamburger_menu {
+.hamburger_menu[for="hamburger"] {
   --x_width: calc(var(--hamburger_height) * 1.41421356237);
   flex-direction: column;
   gap: var(--hamburger_gap);
