@@ -30,7 +30,7 @@ moment in a MelonBall game feels like a step away from the noise of everyday lif
 
 Jobs 1:
 
-Reference: MB3D1
+Reference: MBZHJ
 Title: Environmental Designer – Immersive Tropical Worlds
 Location: Remote or On-site (Hybrid Options Available)
 Salary: $70,000 – $90,000 USD / year (DOE)
@@ -72,7 +72,7 @@ Preferable Requirements:
 
 
 Job Listing 2: Unreal Engine & C++ Programmer
-Reference: MBDEV7
+Reference: MBDEVT
 Title: Unreal Engine Developer (C++) – Gameplay & Systems
 Location: Remote or On-site (Hybrid Options Available)
 Salary: $85,000 – $110,000 USD / year (DOE)

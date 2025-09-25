@@ -26,10 +26,15 @@ A Requirement given by the industry guest lecturer.
 
         <!-- Link to external CSS File -->
         <link rel="stylesheet" href="styles/stylessheet.css">
-        <link rel="stylesheet" href="styles/apply_styles.css">
 
         <!-- Title of Web Page-->
-        <title></title>
+        <title>MelonBall - Apply</title>
+
+        <!-- HTML in CSS Example-->
+        <style>
+          #otherskillslabel {margin-top: 15px;}
+          #otherskills {margin-top: 15px;}
+        </style>
     </head>
     <body>
         <header>
@@ -66,8 +71,8 @@ A Requirement given by the industry guest lecturer.
           </div>
           <!-- End of Header -->
         </header>
-        <main>
 
+        <main>
           <!-- Main form -->
             <div class="background-red">
                 <h4 id="applicationTitle">Application form</h4>
@@ -94,7 +99,7 @@ A Requirement given by the industry guest lecturer.
 
                   <!-- Gender (Radio Buttons + Fieldset and Legend) -->
                   <fieldset>
-                    <legend for="gender">Gender</legend>
+                    <legend>Gender</legend>
                     <label for="male"><input type="radio" value="Male" id="male" name="gender">Male</label>
                     <label for="female"><input type="radio" value="Female" id="female" name="gender">Female</label>
                     <label for="other"><input type="radio" value="Other" id="other" name="gender">Other</label>
@@ -132,7 +137,7 @@ A Requirement given by the industry guest lecturer.
 
                   <!-- Postcode (Exactly 4 digits)-->
                   <label for="postcode">Postcode: </label>
-                  <input type="number" maxlength="4" minlength="4" id="postcode" pattern="[0-9]{4}" class="align_right" required>
+                  <input type="text" maxlength="4" minlength="4" id="postcode" pattern="[0-9]{4}" class="align_right" required>
 
                   <div class="flex-break"></div>
 
@@ -144,31 +149,25 @@ A Requirement given by the industry guest lecturer.
 
                   <!-- Phone Number (8-12 Digits) -->
                   <label for="number">Phone Number: </label>
-                  <input type="number" id="number" pattern="[0-9]{8,12}" class="align_right" required>
+                  <input type="text" id="number" pattern="[0-9]{8,12}" class="align_right" required>
 
                   <div class="flex-break"></div>
 
                   <!-- Skill List (Checkbox inputs) + inline CSS Example-->
                   <label style="margin-top: 15px;">Skill List:</label>
                   <div class="aligncheckboxright">
-                    <label for="teamwork"><input type="checkbox" value="teamwork" id="skills" name="teamwork">Teamworking Skills</label>
-                    <label for="experience"><input type="checkbox" value="experience" id="skills" name="experience">Experience</label>
+                    <label for="teamwork"><input type="checkbox" value="teamwork" id="teamwork" name="skills">Teamworking Skills</label>
+                    <label for="experience"><input type="checkbox" value="experience" id="experience" name="skills">Experience</label>
                   </div>
 
                   <div class="flex-break"></div>
 
                   <div class="aligncheckboxright2">
-                    <label for="ux"><input type="checkbox" value="ux" id="skills" name="ux">User Expererience</label>
-                    <label for="other"><input type="checkbox" value="other" id="skills" name="other">Other Skills</label>
+                    <label for="ux"><input type="checkbox" value="ux" id="ux" name="skills">User Expererience</label>
+                    <label for="others"><input type="checkbox" value="others" id="others" name="skills">Other Skills</label>
                   </div>
 
                   <div class="flex-break"></div>
-
-                  <!-- HTML in CSS Example-->
-                  <style>
-                    #otherskillslabel {margin-top: 15px;}
-                    #otherskills {margin-top: 15px;}
-                  </style>
 
                   <label for="otherskills" id="otherskillslabel">Other Skills: </label>
                   <textarea id="otherskills" cols="50" rows="4"></textarea>
