@@ -225,9 +225,10 @@ h1 {
 /* ------------------- End of mobile/tablet view setup ------------------- */
 /* ------------------- About page ------------------- */
 .group-photo {
-    display: block;
-    float: right;
-    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .grname {
