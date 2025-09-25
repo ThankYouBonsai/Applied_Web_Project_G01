@@ -37,13 +37,14 @@
   padding-top: 10px;
 }
 
-footer {
+.background-red footer {
     clear: both;
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
     border-top: 1px solid #eee;
 }
+
 #submitButton {
   margin-top: 20px;
   border-color: #eee;
@@ -51,9 +52,19 @@ footer {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 15px;
 }
 
-textarea { resize: none;}
+.background-red textarea { resize: none;}
+
+.background-red label {
+  color: white;
+}
+
+.background-red fieldset {
+  margin: 1vw;
+}
+
 
 /* Set all Input to the right*/
 
