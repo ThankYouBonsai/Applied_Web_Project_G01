@@ -267,8 +267,8 @@ h1 {
 }
 
   .about-section {
-    float: center;
     text-align: center;
+    margin: auto;
     width: 80%;
     margin: 20px; /* Space between sections */
     border: 5px solid var(--crimson_red);
