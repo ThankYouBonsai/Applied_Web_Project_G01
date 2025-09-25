@@ -75,7 +75,7 @@ A Requirement given by the industry guest lecturer.
         <main>
           <!-- Main form -->
             <div class="background-red">
-                <h4 id="applicationTitle">Application form</h4>
+                <h1 id="applicationTitle">Application form</h1>
                 <!-- POST form to "formtest.php"-->
                 <form action="formtest.php" method="post">
 
@@ -154,7 +154,8 @@ A Requirement given by the industry guest lecturer.
                   <div class="flex-break"></div>
 
                   <!-- Skill List (Checkbox inputs) + inline CSS Example-->
-                  <label style="margin-top: 15px;">Skill List:</label>
+                   <fieldset>
+                  <legend style="margin-top: 15px;">Skill List:</legend>
                   <div class="aligncheckboxright">
                     <label for="teamwork"><input type="checkbox" value="teamwork" id="teamwork" name="skills">Teamworking Skills</label>
                     <label for="experience"><input type="checkbox" value="experience" id="experience" name="skills">Experience</label>
@@ -166,7 +167,7 @@ A Requirement given by the industry guest lecturer.
                     <label for="ux"><input type="checkbox" value="ux" id="ux" name="skills">User Expererience</label>
                     <label for="others"><input type="checkbox" value="others" id="others" name="skills">Other Skills</label>
                   </div>
-
+                  </fieldset>
                   <div class="flex-break"></div>
 
                   <label for="otherskills" id="otherskillslabel">Other Skills: </label>

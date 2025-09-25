@@ -585,7 +585,11 @@ label[for="hamburger"] p {
   margin: 1vw;
 }
 
-.background-red h4 {
+.background-red h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+.background-red legend {
   color: white;
 }
 
