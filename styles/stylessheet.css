@@ -247,20 +247,31 @@ h1 {
   border-radius: var(--border_radius); /* Rounded corners */
   background-color: #f9f9f9; /* Light background color */
 }
-.figure{ margin:0; }
-
-    .figure figcaption{ 
-      color:var(--muted); 
-      font-size:14px; 
-      margin-top:8px; 
-      text-align:center; }
-
+.photo-box {
+  margin: 0;
+  text-align: center;
+}
+.photo-box {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  object-position: right;;
+  margin: 10px;
+  border: 2px solid var(--crimson_red);
+}
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop instead of stretch */
+}
 
   .about-section {
     float: center;
     text-align: center;
     width: 80%;
-    margin-bottom: 20px; /* Space between sections */
+    margin: 20px; /* Space between sections */
+    border: 5px solid var(--crimson_red);
+    padding: 10px;
   }
   .about-section dl {
   margin: 0 0 20px 0;
@@ -278,7 +289,7 @@ h1 {
   text-align: left;
   }
 img {
-  object-fit: cover;
+  display: flex;
 }
 .about-section ul {
   text-align: left;
