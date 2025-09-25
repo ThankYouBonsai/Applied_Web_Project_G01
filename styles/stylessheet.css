@@ -303,6 +303,10 @@ img {
 
   /* ------ Hamburger menu from this tut: https://youtu.be/dAIVbLrAb_U ------*/ 
 
+label[for="hamburger"] p {
+  display: none;
+}
+
 .hamburger_menu[for="hamburger"] {
   --x_width: calc(var(--hamburger_height) * 1.41421356237);
   flex-direction: column;
@@ -378,7 +382,7 @@ img {
 
 .sidebar a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .sidebar li {
